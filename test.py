@@ -12,6 +12,9 @@ def color():
             x=0
 def game():
     x=11
-    while not x==random:
-        print(random)
-print(random.randint(1,10))
+    y=12
+    while not x==y:
+        y=random.randint(1,10)
+        x=input("Choose your number ")
+        print(y)
+game()
