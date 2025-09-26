@@ -13,9 +13,11 @@ def color():
 def game():
     x=0
     y=random.randint(1,10)
-    i=0
+    z=0
+    i=1
     list=[]
     while not x==y:
+        z=z+1
         x=int(input("Choose your number "))
         if x>y:
             print("Less Than")
@@ -27,7 +29,6 @@ def game():
             print(list)
         else:
             print("Win")
-            for i in range(i):
+            for i in range(z-1):
                 print(list[i])
-                i=i+1
 game()
