@@ -7,28 +7,29 @@ def count():
 def color():
     x="no"
     while not x==0:
-        x=input("What is your favorite color?")
+        x=input("What is your favorite color? ")
         if x=="Stop" or x=="stop":
             x=0
 def game():
+    a=int(input("Min "))
+    b=int(input("Max "))
     x=0
-    y=random.randint(1,10)
+    y=random.randint(a,b)
     z=0
-    i=1
-    list=[]
+    guess_history=[]
     while not x==y:
-        z=z+1
         x=int(input("Choose your number "))
+        z=z+1
         if x>y:
             print("Less Than")
-            list.append(x)
-            print(list)
+            guess_history.append(x)
+            print(guess_history)
         elif x<y:
             print("Greater Than")
-            list.append(x)
-            print(list)
+            guess_history.append(x)
+            print(guess_history)
         else:
             print("Win")
             for i in range(z-1):
-                print(list[i])
+                print(guess_history[i])
 game()
