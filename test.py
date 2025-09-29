@@ -16,7 +16,7 @@ def game():
     x=0
     y=random.randint(a,b)
     z=0
-    guess_history=[]
+    guess_history=["Guess List;:"]
     while not x==y:
         x=int(input("Choose your number "))
         z=z+1
@@ -29,7 +29,7 @@ def game():
             guess_history.append(x)
             print(guess_history)
         else:
-            print("Win")
-            for i in range(z-1):
+            print("You Win")
+            for i in range(z):
                 print(guess_history[i])
 game()
